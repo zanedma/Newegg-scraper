@@ -84,7 +84,7 @@ if __name__ == "__main__":
                 continue
             if check_stock(content):
                 print('[scraper] product is in stock')
-                notify(link, '', service)
+                notify(link, email, service)
             else:
                 print('[scraper] product is out of stock')
         time.sleep(60)
